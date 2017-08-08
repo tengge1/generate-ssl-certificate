@@ -1,3 +1,4 @@
 cd /d %~dp0
-openssl pkcs12 -export -out ca/ca.pfx -inkey ca/ca-key.pem -in ca/ca-cert.pem
+chcp 65001
+openssl pkcs12 -export -out ca/ca.pfx -inkey ca/ca.key -in ca/ca.cer
 pause
